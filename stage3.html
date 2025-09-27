@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Technologies | Smart Sewage Monitoring System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(135deg, #00bcd4, #1c3f95);
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://via.placeholder.com/1920x800?text=Smart+City+Background") no-repeat center center;
+      background-size: cover;
+      opacity: 0.2;
+    }
+    header .company-name {
+      font-weight: 800;
+      font-size: 3.8rem;
+      color: #ff9900; /* Flash Technologies Color */
+    }
+
+    /* Key Features Section */
+    section {
+      padding: 80px 20px;
+    }
+
+    section h2 {
+      font-size: 2.8rem;
+      text-align: center;
+      color: #1c3f95;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .feature-card {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 30%;
+      min-width: 250px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+    }
+    .feature-card img {
+      width: 60%;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+    }
+    .feature-card h3 {
+      font-size: 1.8rem;
+      color: #1c3f95;
+      margin-bottom: 15px;
+    }
+    .feature-card p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+      display: flex;
+      justify-content: space-around;
+      gap: 50px;
+      margin-bottom: 80px;
+    }
+    .how-it-works .step {
+      width: 30%;
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .how-it-works .step img {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+    .how-it-works .step h3 {
+      font-size: 1.8rem;
+      color: #1c3f95;
+      margin-bottom: 15px;
+    }
+    .how-it-works .step p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Client Testimonials Section */
+    .testimonials {
+      background-color: #f1f1f1;
+      padding: 80px 20px;
+    }
+    .testimonial-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .testimonial {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      min-width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .testimonial:hover {
+      transform: translateY(-10px);
+    }
+    .testimonial img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .testimonial p {
+      font-size: 1rem;
+      font-style: italic;
+      color: #777;
+    }
+    .testimonial h3 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    /* Call to Action Section */
+    .cta {
+      text-align: center;
+      background-color: #00bcd4;
+      padding: 60px 20px;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin: 60px 0;
+    }
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .cta .btn {
+      background-color: #1c3f95;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    .cta .btn:hover {
+      background-color: #0d4c77;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1 class="company-name">Flash Technologies</h1>
+    <p>Your Partner in Smart City Solutions</p>
+    <p>Harnessing IoT & AI for Sustainable Sewage Monitoring</p>
+  </header>
+
+  <!-- Key Features Section -->
+  <section>
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <img src="https://via.placeholder.com/150" alt="Real-Time Monitoring">
+        <h3>Real-Time Monitoring</h3>
+        <p>Track water levels, flow rates, and pressure in real-time to stay ahead of potential issues before they escalate.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://via.placeholder.com/150" alt="AI Analytics">
+        <h3>AI-Powered Insights</h3>
+        <p>Advanced AI models analyze sensor data to predict maintenance needs, reducing downtime and saving costs.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://via.placeholder.com/150" alt="Eco-Friendly">
+        <h3>Eco-Friendly</h3>
+        <p>Prevent sewage overflow and protect the environment while keeping the sewage infrastructure functioning efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section>
+    <h2>How Our System Works</h2>
+    <div class="how-it-works">
+      <div class="step">
+        <img src="https://via.placeholder.com/300x200?text=IoT+Sensors" alt="IoT Sensors">
+        <h3>IoT Sensors</h3>
+        <p>Our smart IoT sensors continuously monitor the sewage system, detecting issues such as blockages or irregular flow rates.</p>
+      </div>
+      <div class="step">
+        <img src="https://via.placeholder.com/300x200?text=AI+Analysis" alt="AI Analysis">
+        <h3>AI Analysis</h3>
+        <p>Our AI system analyzes sensor data to predict potential failures and optimize system performance.</p>
+      </div>
+      <div class="step">
+        <img src="https://via.placeholder.com/300x200?text=Cloud+Integration" alt="Cloud Integration">
+        <h3>Cloud Integration</h3>
+        <p>All data is stored and visualized in the cloud, accessible by city planners for quick decision-making and action.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="John Doe">
+        <h3>John Doe, City Planner</h3>
+        <p>"This system helped us monitor sewage systems 24/7, significantly reducing our response times and preventing costly failures."</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="Sarah Williams">
+        <h3>Sarah Williams, Environmental Officer</h3>
+        <p>"Not only does it save us money, but it's also helping us protect the environment. I highly recommend it!"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <h2>Ready to Transform Your City's Sewage System?</h2>
+    <p>Contact us today to learn how we can help you implement a smarter, more efficient sewage monitoring solution.</p>
+    <a href="contact.html" class="btn">Get Started</a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Flash Technologies | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
